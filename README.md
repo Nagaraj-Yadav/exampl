@@ -3,9 +3,8 @@
 
 This project stores the streaming IoT data into ADLS gen2 storage account written in Python. The data would be stored in files of our desired format. Data from multiple IoT devices would be processed parallelly and stored in their respective destinations(ADLS) as per the given conventions.
 
-## Getting Started
+# Getting Started
 
----
 
 ## Download
 
@@ -30,7 +29,8 @@ config['Azure_Credentials'] = {
 ```
 
 - Add your preferred IoT devices in the `Devices.py` file.
-  - >Strictly one functon per device.
+
+  - > Strictly one functon per device.
   - If any authorization credentials are applicable to the device, add them in `configurations.py` file as shown below
   ```
   configurations.py
@@ -66,7 +66,7 @@ def <function name>():
         time.sleep(10)
 ```
 >
-> NOTE : No duplicate function names allowed.
+> **NOTE** : No duplicate function names allowed.
 >
 
 Suppose, I have to add a simple Temperature-Humidity simulator, the structure would be, 
