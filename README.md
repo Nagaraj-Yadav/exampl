@@ -1,4 +1,3 @@
-# exampl
 # Ingest IoT data into ADLS
 
 This project stores the streaming IoT data into ADLS gen2 storage account written in Python. The data would be stored in files of our desired format. Data from multiple IoT devices would be processed parallelly and stored in their respective destinations(ADLS) as per the given conventions.
