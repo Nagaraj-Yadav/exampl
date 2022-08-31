@@ -29,7 +29,7 @@ config['Azure_Credentials'] = {
 
 - Add your preferred IoT devices in the `Devices.py` file.
 
-  - > Strictly one functon per device.
+  - > **Strictly one functon per device**.
   - If any authorization credentials are applicable to the device, add them in `configurations.py` file as shown below
   ```
   configurations.py
