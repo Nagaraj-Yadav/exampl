@@ -124,13 +124,13 @@ Once done with all the prereqisites, run the `main.py` file.
 
 - A list of existing containers in the provided storage account would be shown first and then, You would be prompted to enter the name of the container that you wish to consider to store the data. You can enter the name of an existing container or a new one too.
 
-`
+```
 Existing containers in the selected storage account are listed below.
 container-1
 container-2
 
 Enter the name of the container of your choice to work on (Existing/New) :
-`
+```
 
 - Later, you would be shown the list of available devices in the project and then would be  
 prompted to select the devices you would like to run.    
