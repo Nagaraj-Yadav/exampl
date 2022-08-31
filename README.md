@@ -115,7 +115,7 @@ def run_tempHumidity_telemetry_sample():
 
 Using Azure SDKs and storage account credentials, we interact with the storage
 
-![](Images/Screenshot3.png)
+![](Screenshot3.png)
 
 ## Running
 
