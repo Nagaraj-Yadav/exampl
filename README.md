@@ -11,6 +11,13 @@ This project stores the streaming IoT data into ADLS gen2 storage account writte
 pip install azure-iot-device
 pip install azure-storage-file-datalake
 ```
+
+## Design
+
+Using Azure SDKs and storage account credentials, we interact with the storage
+
+![](Screenshot3.png)
+
 ## Requirements
 
 - An Azure Data Lake Storage Gen2 account
@@ -30,7 +37,7 @@ config['Azure_Credentials'] = {
 - Add your preferred IoT devices in the `Devices.py` file.
 
   - > **Strictly one functon per device**.
-  - If any authorization credentials are applicable to the device, add them in `configurations.py` file as shown below
+  - If any authorization credentials are applicable to the device, add them in `configurations.py` file as shown below and run it once.
   ```
   configurations.py
 
@@ -111,17 +118,13 @@ def run_tempHumidity_telemetry_sample():
         time.sleep(10)
 ```
 
-## Design
 
-Using Azure SDKs and storage account credentials, we interact with the storage
-
-![](Screenshot3.png)
 
 ## Running
 
 Once done with all the prereqisites, run the `main.py` file.
 
-- A list of existing containers in the provided storage account would be shown first and then, You would be prompted to enter the name of the container that you wish to consider to store the data. You can enter the name of an existing container or a new one too.
+- A list of existing containers in the provided storage account would be shown first and then, user would be prompted to enter the name of the container to store the data. User can enter the name of an existing container or a new one too.
 
 ```
 Existing containers in the selected storage account are listed below.
@@ -131,8 +134,7 @@ container-2
 Enter the name of the container of your choice to work on (Existing/New) :
 ```
 
-- Later, you would be shown the list of available devices in the project and then would be  
-prompted to select the devices you would like to run.    
+- Later, user would be shown the list of available devices in the project and then would be prompted to select the devices to run.    
 
 ```
 Enter the respective id of the devices you would like to run as space separated integers
@@ -149,7 +151,7 @@ Here :
 
 `Here : 1 2 3` - To run the devices 1,2,3
 
-- Once you select the devices, catching your device's data starts and you will be parallely be prompted as, which asks your respective device name(or function name of that particular device) to exit.
+- Once user select the devices, catching device's data starts and user will be parallely be prompted as shown below, which asks for respective device name(or function name of that particular device) to exit.
 
 `Enter the name of the Device and hit 'Enter' to exit : `
 
