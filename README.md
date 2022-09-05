@@ -39,7 +39,7 @@ config['Azure_Credentials'] = {
 
 - Find your storage account credentials.
     
-    ![](Screenshot (20).png)
+    ![](Screenshot2.png)
 
     
 
