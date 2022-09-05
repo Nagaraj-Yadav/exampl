@@ -20,9 +20,12 @@ Using Azure SDKs and storage account credentials, we interact with the storage
 
 ## Requirements
 
-- An Azure Data Lake Storage Gen2 account
+- An Azure Data Lake Storage Gen2 account [ADLS Gen2 account creation](https://docs.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account) .
 
 - Get the following ADLS account credentials and replace them accordingly in their respective fields in `configurations.py` file. 
+
+    
+
 
 ```
 configurations.py
@@ -34,6 +37,13 @@ config['Azure_Credentials'] = {
     }
 ```
 
+- Find your storage account credentials.
+    
+    ![](Screenshot (20).png)
+
+    
+
+
 - Add your preferred IoT devices in the `Devices.py` file.
 
   - > **Strictly one functon per device**.
@@ -42,8 +52,8 @@ config['Azure_Credentials'] = {
   configurations.py
 
   config['<function name>'] = {
-    'key' : '<value>',
-    'key' : '<value>',
+    'key-1' : '<value-1>',
+    'key-2' : '<value-2>',
     }
   ``` 
   \<function name\>   - Name of the function that you give to that particular device.\
