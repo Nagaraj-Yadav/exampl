@@ -16,7 +16,7 @@ pip install azure-storage-file-datalake
 
 Using Azure SDKs and storage account credentials, we interact with the storage
 
-![](Images/Screenshot3.png)
+![](Screenshot3.png)
 
 ## Requirements
 
@@ -39,7 +39,7 @@ config['Azure_Credentials'] = {
 
 - Find your storage account credentials.
     
-    ![](Images/Screenshot2.png)
+    ![](Screenshot2.png)
 
 
 
